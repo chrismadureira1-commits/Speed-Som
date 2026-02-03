@@ -249,63 +249,17 @@ footer {
         align-items: center;
     }
 }
-/* Responsividade */
-
-/* Telas até 1024px (tablets e notebooks pequenos) */
-@media (max-width: 1024px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .cards, .produtos-galeria, .equipe-galeria, .galeria {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .galeria img {
-    max-width: 45%;
-  }
-}
-
-/* Telas até 768px (tablets em pé e celulares grandes) */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2em;
-  }
-
-  .hero p {
-    font-size: 1em;
-  }
-
-  .galeria img {
-    width: 100%;
-    max-width: 350px;
-  }
-
-  .produto, .membro {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  form {
-    width: 100%;
-  }
-}
-
 /* Telas até 480px (celulares pequenos) */
 @media (max-width: 480px) {
   header .logo {
     font-size: 1.2em;
   }
 
+  /* Mantém o menu horizontal */
   nav ul {
-    flex-direction: column;
+    flex-direction: row;   /* força horizontal */
+    flex-wrap: wrap;       /* quebra linha se não couber */
+    justify-content: center;
     gap: 10px;
   }
 
