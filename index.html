@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+     <link href="img/logo.jfif" rel="icon"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Speed Som - Elétrica Automotiva</title>
@@ -8,8 +9,8 @@
 </head>
 <body>
     <header>
-        <div class="logo">⚡ Speed Som</div>
-        <nav>
+        <div class="logo">⚡ Speed Som </div>
+                <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#servicos">Serviços</a></li>
@@ -19,6 +20,7 @@
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#localizacao">Localização</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a href="#equipe">Equipe</a></li>
             </ul>
         </nav>
     </header>
@@ -34,21 +36,36 @@
     <section id="servicos" class="container">
         <h2>Nossos Serviços</h2>
         <div class="cards">
-            <div class="card"><h3>Instalação de Som</h3><p>Áudio de alta qualidade.</p></div>
-            <div class="card"><h3>Elétrica Automotiva</h3><p>Diagnóstico e reparo.</p></div>
-            <div class="card"><h3>Personalização</h3><p>LED, alarmes e mais.</p></div>
+            <div class="card">
+                <h3>Instalação de Som</h3>
+                <p>Áudio de alta qualidade.</p>
+            </div>
+            <div class="card">
+                <h3>Elétrica Automotiva</h3>
+                <p>Diagnóstico e reparo.</p>
+            </div>
+            <div class="card">
+                <h3>Personalização</h3>
+                <p>LED, alarmes e mais.</p>
+            </div>
         </div>
     </section>
 
     <!-- Produtos -->
     <section id="produtos" class="container">
         <h2>Produtos</h2>
-        <ul class="produtos-lista">
-            <li>Caixas de som automotivas</li>
-            <li>Alarmes e rastreadores</li>
-            <li>Iluminação LED</li>
-            <li>Baterias e cabos</li>
-        </ul>
+        <div class="produtos-galeria">
+            <div class="produto">
+                <img src="img/caixa som.jfif" alt="Caixa de som automotiva">
+                <h3>Caixa de Som</h3>
+                <p>Qualidade premium para seu carro.</p>
+            </div>
+            <div class="produto">
+                <img src="img/led.jfif" alt="Iluminação LED automotiva">
+                <h3>Iluminação LED</h3>
+                <p>Estilo e eficiência energética.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Portfólio -->
@@ -56,8 +73,15 @@
         <h2>Portfólio</h2>
         <p>Confira alguns dos nossos trabalhos:</p>
         <div class="galeria">
-            <img src="img/caixa som.jfif" alt="istalação de som">
-            <img src="img/led.jfif" alt="Sistema elétrico">
+              <img src="img/e93b1f04-35cb-4184-98bf-2752a2b8ed8e.jfif" alt="Foto 1" 
+     onclick="abrirModalImagem(this.src); fbq('track', 'ViewContent', {content_name: 'Foto 1'});"> 
+
+<img src="img/caixa 2.jfif" alt="Foto 2" 
+     onclick="abrirModalImagem(this.src); fbq('track', 'ViewContent', {content_name: 'Foto 2'});">
+
+<img src="img/logo.jfif" alt="Foto 3" 
+     onclick="abrirModalImagem(this.src); fbq('track', 'ViewContent', {content_name: 'Foto 3'});">
+
         </div>
     </section>
 
@@ -83,21 +107,76 @@
     <!-- Localização -->
     <section id="localizacao" class="container">
         <h2>Onde Estamos</h2>
-        <p>AV Belo horizonte, 707,lontra-mg </p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.0564793499093!2d-44.30395362569164!3d-15.90611172571423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x75451a0e8f8ca81%3A0x69e153c847bc6d90!2sSpeed%20Som!5e0!3m2!1spt-BR!2sbr!4v1769994827454!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Av. Belo Horizonte, 707 - Lontra/MG</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </section>
+
+    <!-- Equipe -->
+    <section id="equipe" class="container">
+        <h2>Nossa Equipe</h2>
+        <div class="equipe-galeria">
+            <div class="membro">
+                <img src="img/a417d1ff-c34a-4bfd-b0f4-95781bec5f43.jfif" alt="Douglas - Técnico de Som">
+                <h3>Douglas</h3>
+                <p>Engenehiro eletrico</p>
+            </div>
+            <div class="membro">
+                <img src="img/577cc50a-21bc-498c-9bf5-b372a6040cee.jfif" alt="Chrisley - Especialista em Elétrica">
+                <h3>Chrisley</h3>
+                <p>Auxiliar eletricista</p>
+            </div>
+        </div>
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="container">
-        <h2>Contato</h2>
-        <form id="formContato">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            <button type="submit" class="btn">Enviar</button>
+     <section id="orcamento" class="container">
+  <h2>Solicite seu Orçamento</h2>
+  <form id="formOrcamento">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="servico">Serviço desejado:</label>
+    <input type="text" id="servico" name="servico" required>
+
+    <label for="carro">Modelo do carro:</label>
+    <input type="text" id="carro" name="carro" required>
+
+    <label for="mensagem">Mensagem adicional:</label>
+    <textarea id="mensagem" name="mensagem"></textarea>
+
+    <button type="submit" class="btn">Enviar via WhatsApp</button>
+  </form>
+</section>
+
+<script>
+  document.getElementById("formOrcamento").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // Pegando os valores do formulário
+    var nome = document.getElementById("nome").value;
+    var servico = document.getElementById("servico").value;
+    var carro = document.getElementById("carro").value;
+    var mensagem = document.getElementById("mensagem").value;
+
+    // Número do WhatsApp (coloque o seu número aqui com DDI + DDD)
+   <a href="https://wa.me/38999763926?text=Olá, quero um orçamento para instalação de som automotivo" target="_blank">
+   Enviar via WhatsApp
+</a>
+
+    // Texto da mensagem
+    var texto = "Olá, meu nome é " + nome + 
+                ". Gostaria de solicitar um orçamento para: " + servico + 
+                ". Meu carro é: " + carro + 
+                ". Mensagem: " + mensagem;
+
+    // Monta o link do WhatsApp
+    var url = "https://wa.me/" + telefone + "?text=" + encodeURIComponent(texto);
+
+    // Abre o WhatsApp
+    window.open(url, "_blank");
+    
+  });
+</script>
         </form>
     </section>
 
@@ -106,49 +185,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <!-- Produtos -->
-<section id="produtos" class="container">
-    <h2>Produtos</h2>
-    <div class="produtos-galeria">
-        <div class="produto">
-            <img src="img/caixa som.jfif" alt="Caixa de som automotiva">
-            <h3>Caixa de Som</h3>
-            <p>Qualidade premium para seu carro.</p>
-        </div>
-        <div class="produto">
-            <img src="img/led.jfif" alt="Iluminação LED">
-            <h3>Iluminação LED</h3>
-            <p>Estilo e eficiência energética.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Portfólio -->
-<section id="portfolio" class="container">
-    <h2>Portfólio</h2>
-    <p>Confira alguns dos nossos trabalhos:</p>
-    <div class="galeria">
-        <img src="img/e93b1f04-35cb-4184-98bf-2752a2b8ed8e.jfif" alt="Instalação de som">
-        <img src="img/4fa4ce19-02fa-4bda-844a-39c5a6175f35.jfif" alt="Iluminação LED">
-        <img src="img/22b8b03a-8221-48b8-9e56-5a6b542ed3c8.jfif" alt="Nosso logo">
-    </div>
-</section>
-
-<!-- Equipe -->
-<section id="equipe" class="container">
-    <h2>Nossa Equipe</h2>
-    <div class="equipe-galeria">
-        <div class="membro">
-            <img src="img/a417d1ff-c34a-4bfd-b0f4-95781bec5f43.jfif" alt="Douglas- Engenheiro Eletricista">
-            <h3>Douglas</h3>
-            <p>Técnico de Som</p>
-        </div>
-        <div class="membro">
-            <img src="img/577cc50a-21bc-498c-9bf5-b372a6040cee.jfif" alt="Chrisley - Auxiliar Eletricista">
-            <h3>Chrisley</h3>
-            <p>Especialista em Elétrica</p>
-        </div>
-    </div>
-</section>
 </body>
 </html>
